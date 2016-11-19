@@ -1,0 +1,99 @@
+# BNF-ish format
+# <start> is a special starting symbol
+# | separates choices of a production rule
+# ;; terminates a rule
+# Whitespace is collapsed
+
+
+# Crude way of decreasing sequel likelihood to 1/3
+<start> := <nosequel> | <nosequel> | <sequel> ;;
+
+# Use title, sequel, subtitle tags in HTML markup
+<nosequel> := [title]<title>[/title] ;;
+
+<title> := <classic_title> | <classic_title> | <classic_title>
+	| <extended_title>
+	;;
+
+<classic_title> := <adjective> <noun>;;
+
+<extended_title> := 
+	  the <noun_s> and the <noun_s> # The heart and the desire
+	| <verb_ppl> by <noun_pl>       # Violated by obsessions
+	| return to <noun_pl>           # Return to confessions
+	| height of <noun_abstr_s>      # Height of aggression
+	| point of <noun_abstr_s>       # Point of seduction
+	| <noun_desire> for <noun_sexy> # Urge for passion
+	| <noun_desire> to <verb_inf>   # Urge to murder
+	| victim of <noun_pl>           #
+	| body of <noun_pl>             #
+	| the color of the <noun_s>     # The color of the embrace
+	| trial of <noun_abstr_s>       # Trial of passion
+	| the art of <noun_s>           # 
+	| driven to <verb_inf>          # Driven to murder
+	;;
+# | <noun_s>.com                  # Sweat.com, Obsession.com
+
+<sequel> := [title]<classic_title>[/title] [sequel]<num>[/sequel] [subtitle]<subtitle>[/subtitle] ;;
+# subtitles have a larger chance of being extended than regular title
+<subtitle> := <classic_title> | <classic_title> 
+	| <extended_title>
+	;;
+#z | the temptress | don't tell | point of seduction;;
+
+<num> := 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;;
+
+# ########################## 
+#   NOUNS
+# ##########################
+<noun> := <noun_s> | <noun_pl>;;
+<noun_s> := <noun_conc_s> | <noun_abstr_s> | <noun_abstr_s>;; # abstr longer so more likely
+
+# Concrete singular noun
+<noun_conc_s> := roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
+	| fire | Eden | weapon | orchid | temptress | beast
+	;;
+
+# Abstract singular noun
+<noun_abstr_s> := <noun_sexy> 
+	| <noun_desire>
+	| heat | malice | malevolence | attraction | suspicion | chemistry | fear | touch
+	| knowledge | deception | vice | influence | behavior | love | beauty | jeopardy
+	| response | justice | pursuit | discretion | bounty | fascination | hunger 
+	| heat | evidence | predator | embrace | night | witness | aggression | rage
+	| death
+	;;
+
+<noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
+
+<noun_desire> := urge | passion | obsession | lust | desire | longing | yearning | appetite;;
+
+<noun_pl> := illusions | requirements | instincts | desires | confessions | secrets
+	| liaisons | suspicions | perversions | affairs | encounters | emotions | inhibitions
+	| obsessions | misfortunes | lies | sins | crimes | motives | murders | awakenings
+	| boundaries | temptations | dreams | favors | lessons | relations | interludes
+	| games | revelations | eyes | bodies | curves
+	;;
+
+# ########################## 
+#   Adjectives
+# ##########################
+<adjective> := <adj_number>
+	| dead | deadly | evil | malicious | naked | sinful | sensual | cruel | sexual
+	| lustful | forbidden | sinister | tawdry | guilty | dangerous | body | fatal | bedroom | bare
+	| wild | female | twisted | burning | hard | family | scandalous | stripped | night
+	| dark | hot | haunting | hidden | basic | random | virtual | human | erotic
+	| intimate | destructive | fleshly | carnal | animal | criminal | obsessive | nightly | blue
+	| dangerous | lethal | predatory | wicked | deep | indecent | midnight | private
+	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
+	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
+	| physical
+	;;
+
+<adj_number> := double | triple;;
+
+# ########################## 
+#   VERBS
+# ##########################
+<verb_inf> := kill | die | seduce | murder | burn | conceal;;
+<verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed;;
