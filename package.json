@@ -1,0 +1,18 @@
+{
+  "name": "ettg",
+  "version": "0.0.1",
+  "description": "The erotric thriller title generator.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thriller",
+    "title",
+    "generator",
+    "shannon",
+    "tweed"
+  ],
+  "author": "spasm!turkey",
+  "license": "MIT"
+}
