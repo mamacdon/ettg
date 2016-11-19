@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "The erotric thriller title generator.",
   "main": "main.js",
+  "engines": {
+    "node": "4.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
