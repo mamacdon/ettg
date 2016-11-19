@@ -12,7 +12,7 @@ $ npm install ettg
 Then run it:
 ```
 $ $(npm bin)/ettg
-NOW PLAYING:
+NOW AVAILABLE ON VIDEOCASSETTE:
 
  * Night Roulette 3: Concealed Jeopardy
  * Basic Curves
