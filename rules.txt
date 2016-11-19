@@ -1,9 +1,14 @@
+# ###########################################################################
 # BNF-ish format
-# <start> is a special starting symbol
-# | separates choices of a production rule
-# ;; terminates a rule
-# Whitespace is collapsed
-
+#
+# `<start>`  the special starting symbol
+# `|`        separates choices of a production rule
+# `;;`       terminates a rule
+# `#`        begins a comment (continues to end of line)
+#
+# Sequential whitespaces are collapsed. Trailing whitespaces are ignored.
+#
+# ###########################################################################
 
 # Crude way of decreasing sequel likelihood to 1/3
 <start> := <nosequel> | <nosequel> | <sequel> ;;
@@ -32,9 +37,11 @@
 	| the art of <noun_s>           # 
 	| driven to <verb_inf>          # Driven to murder
 	;;
+# TODO restore this production when .com comes back into vogue
 # | <noun_s>.com                  # Sweat.com, Obsession.com
 
 <sequel> := [title]<classic_title>[/title] [sequel]<num>[/sequel] [subtitle]<subtitle>[/subtitle] ;;
+
 # subtitles have a larger chance of being extended than regular title
 <subtitle> := <classic_title> | <classic_title> 
 	| <extended_title>
@@ -43,9 +50,9 @@
 
 <num> := 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;;
 
-# ########################## 
-#   NOUNS
-# ##########################
+# ###########################################################################
+# NOUNS
+# ###########################################################################
 <noun> := <noun_s> | <noun_pl>;;
 <noun_s> := <noun_conc_s> | <noun_abstr_s> | <noun_abstr_s>;; # abstr longer so more likely
 
@@ -75,9 +82,9 @@
 	| games | revelations | eyes | bodies | curves
 	;;
 
-# ########################## 
-#   Adjectives
-# ##########################
+# ###########################################################################
+# Adjectives
+# ###########################################################################
 <adjective> := <adj_number>
 	| dead | deadly | evil | malicious | naked | sinful | sensual | cruel | sexual
 	| lustful | forbidden | sinister | tawdry | guilty | dangerous | body | fatal | bedroom | bare
@@ -92,8 +99,8 @@
 
 <adj_number> := double | triple;;
 
-# ########################## 
-#   VERBS
-# ##########################
+# ###########################################################################
+# VERBS
+# ###########################################################################
 <verb_inf> := kill | die | seduce | murder | burn | conceal;;
 <verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed;;
