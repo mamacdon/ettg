@@ -20,5 +20,8 @@
     "tweed"
   ],
   "author": "spasm!turkey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.4"
+  }
 }
