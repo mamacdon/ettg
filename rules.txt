@@ -34,7 +34,7 @@
 	| body of <noun_pl>             #
 	| the color of the <noun_s>     # The color of the embrace
 	| trial of <noun_abstr_s>       # Trial of passion
-	| the art of <noun_s>           # 
+	| the art of <noun_abstr_s>     # The art of malice
 	| driven to <verb_inf>          # Driven to murder
 	;;
 # TODO restore this production when .com comes back into vogue
