@@ -94,7 +94,7 @@
 	| dangerous | lethal | predatory | wicked | deep | indecent | midnight | private
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
-	| physical
+	| physical | collateral
 	;;
 
 <adj_number> := double | triple;;
