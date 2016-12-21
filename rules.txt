@@ -82,7 +82,7 @@
 	| liaisons | suspicions | perversions | affairs | encounters | emotions | inhibitions
 	| obsessions | misfortunes | lies | sins | crimes | motives | murders | awakenings
 	| boundaries | temptations | dreams | favors | lessons | relations | interludes
-	| games | revelations | eyes | bodies | curves
+	| games | revelations | eyes | bodies | curves | senses
 	;;
 
 <noun_symptom> := affliction | syndrome ;;
