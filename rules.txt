@@ -36,6 +36,8 @@
 	| trial of <noun_abstr_s>       # Trial of passion
 	| the art of <noun_abstr_s>     # The art of malice
 	| driven to <verb_inf>          # Driven to murder
+	| the virgin <noun_s>           # The virgin heart
+	| blood of <noun_pl>
 	;;
 # TODO restore this production when .com comes back into vogue
 # | <noun_s>.com                  # Sweat.com, Obsession.com
@@ -58,7 +60,7 @@
 
 # Concrete singular noun
 <noun_conc_s> := roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
-	| fire | Eden | weapon | orchid | temptress | beast
+	| fire | Eden | weapon | orchid | temptress | beast | heart
 	;;
 
 # Abstract singular noun
