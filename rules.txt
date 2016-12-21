@@ -25,6 +25,7 @@
 <extended_title> := 
 	  the <noun_s> and the <noun_s> # The heart and the desire
 	| <verb_ppl> by <noun_pl>       # Violated by obsessions
+	| <verb_ppl> to <verb_inf>      # Stripped to kill
 	| return to <noun_pl>           # Return to confessions
 	| height of <noun_abstr_s>      # Height of aggression
 	| point of <noun_abstr_s>       # Point of seduction
@@ -108,4 +109,4 @@
 # VERBS
 # ###########################################################################
 <verb_inf> := kill | die | seduce | murder | burn | conceal;;
-<verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed;;
+<verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed | stripped | dressed ;;
