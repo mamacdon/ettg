@@ -64,7 +64,7 @@
 
 # Concrete singular noun
 <noun_conc_s> := roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
-	| fire | Eden | weapon | orchid | temptress | beast | heart
+	| fire | Eden | weapon | orchid | temptress | beast | heart | dancer
 	;;
 
 # Abstract singular noun
@@ -73,7 +73,7 @@
 	| knowledge | deception | vice | influence | behavior | love | beauty | jeopardy
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
-	| death
+	| death | bond | risk
 	;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
@@ -84,7 +84,7 @@
 	| liaisons | suspicions | perversions | affairs | encounters | emotions | inhibitions
 	| obsessions | misfortunes | lies | sins | crimes | motives | murders | awakenings
 	| boundaries | temptations | dreams | favors | lessons | relations | interludes
-	| games | revelations | eyes | bodies | curves | senses
+	| games | revelations | eyes | bodies | curves | senses | passions | rhythms
 	;;
 
 <noun_symptom> := affliction | syndrome ;;
@@ -101,7 +101,7 @@
 	| dangerous | lethal | predatory | wicked | deep | indecent | midnight | private
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
-	| physical | collateral | bitter
+	| physical | collateral | bitter | mortal | bodily | terminal
 	;;
 
 <adj_number> := double | triple;;
