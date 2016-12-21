@@ -38,6 +38,8 @@
 	| driven to <verb_inf>          # Driven to murder
 	| the virgin <noun_s>           # The virgin heart
 	| blood of <noun_pl>
+	| <noun_sexy> <noun_symptom>    # Murder syndrome
+	| <noun_pl> of <noun_sexy>      # Crimes of passion
 	;;
 # TODO restore this production when .com comes back into vogue
 # | <noun_s>.com                  # Sweat.com, Obsession.com
@@ -82,6 +84,8 @@
 	| boundaries | temptations | dreams | favors | lessons | relations | interludes
 	| games | revelations | eyes | bodies | curves
 	;;
+
+<noun_symptom> := affliction | syndrome ;;
 
 # ###########################################################################
 # Adjectives
