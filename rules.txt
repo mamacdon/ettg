@@ -73,7 +73,7 @@
 	| knowledge | deception | vice | influence | behavior | love | beauty | jeopardy
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
-	| death | bond | risk
+	| death | bond | risk | innocence | comfort
 	;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
@@ -101,7 +101,7 @@
 	| dangerous | lethal | predatory | wicked | deep | indecent | midnight | private
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
-	| physical | collateral | bitter | mortal | bodily | terminal
+	| physical | collateral | bitter | mortal | bodily | terminal | ultimate
 	;;
 
 <adj_number> := double | triple;;
