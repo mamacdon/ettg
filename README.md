@@ -26,5 +26,9 @@ NOW AVAILABLE ON VIDEOCASSETTE:
  * Sinister Suspicions
 ```
 
+## Known issues
+* The npm package is currently not valid ES5 (it uses raw arrow functions).
+  This will complicate reuse in other libraries
+
 ## License
 [ISC](https://en.wikipedia.org/wiki/ISC_license)
