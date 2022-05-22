@@ -1,10 +1,10 @@
 {
   "name": "ettg",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "The erotic thriller title generator.",
   "main": "main.js",
   "engines": {
-    "node": "4.x"
+    "node": "14.10.x"
   },
   "bin": {
     "ettg": "./bin/cli.js"
@@ -24,8 +24,5 @@
     "url": "https://github.com/mamacdon/ettg"
   },
   "author": "spasm!turkey",
-  "license": "ISC",
-  "dependencies": {
-    "chance": "^1.0.4"
-  }
+  "license": "ISC"
 }
