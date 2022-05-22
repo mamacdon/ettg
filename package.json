@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "The erotic thriller title generator.",
   "main": "main.js",
+  "module": "main.esm.js",
+  "type": "module",
   "engines": {
     "node": ">=14.10.x"
   },
