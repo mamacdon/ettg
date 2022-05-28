@@ -48,6 +48,7 @@
 	| the shape of <noun_abstr_s>
 	| beyond <noun_abstr_s>
 	| the <noun_abstr_s> <noun_interior>
+	| <verb_inf_transitive> me <time> # Kiss me again
 	;;
 
 # in the heat of
@@ -82,7 +83,7 @@
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
 	| death | bond | risk | innocence | comfort | need | revenge | truth | instinct
-	| paradise | lie | crime | intrigue | betrayal 
+	| paradise | lie | crime | intrigue | betrayal | thrill
 	;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
@@ -118,7 +119,7 @@
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
 	| physical | collateral | bitter | mortal | bodily | terminal | ultimate | primal | caged
-	| shapely | sheer | irresistible | killer | deviant
+	| shapely | sheer | irresistible | killer | deviant | exploited
 	;;
 
 <adj_number> := double | triple;;
@@ -126,10 +127,15 @@
 # ###########################################################################
 # VERBS
 # ###########################################################################
-<verb_inf> := kill | die | seduce | murder | burn | conceal | strip;;
+<verb_inf> := <verb_inf_intransitive> | <verb_inf_transitive> ;;
+<verb_inf_intransitive> := die ;;
+<verb_inf_transitive> := kill | secude | murder | burn | conceal | strip | use | thrill ;;
+
 <verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed | stripped | dressed ;;
 
 # ###########################################################################
 # Article
 # ###########################################################################
-<a_an> := __a_an__
+<a_an> := __a_an__ ;;
+
+<time> := again | tomorrow | never ;;
