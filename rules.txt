@@ -27,10 +27,10 @@
 	| return to <noun_abstr_s>      # Return to malice
 	| height of <noun_desire>       # Height of desire
 	| point of <noun_abstr_s>       # Point of seduction
-	| <noun_desire> for <noun_sexy> # Urge for passion
+	| <noun_desire> for <noun_abstr_smutty> # Urge for passion
 	| <noun_desire> to <verb_inf>   # Urge to murder
 	| victim of <noun_pl>           #
-	| body of <noun_pl>             #
+	| body of <noun_pl>             # Body of evidence
 	| the color of the <noun_s>     # The color of the embrace
 	| trial of <noun_abstr_s>       # Trial of passion
 	| the art of <noun_abstr_s>     # The art of malice
@@ -39,11 +39,11 @@
 	| the virgin <noun_s>           # The virgin heart
 	| blood of <noun_pl>
 	| <noun_sexy> <noun_symptom>    # Murder syndrome
-	| <noun_pl> of <noun_sexy>      # Crimes of passion
+	| <noun_pl> of <noun_abstr_smutty>      # Crimes of passion
 	| hard to <verb_inf>            # Hard to die
 	| <noun_abstr_s> behind bars    # Vice Behind Bars
 	| the price of <noun_abstr_s>  
-	| the perfect <noun_sexy>
+	| the perfect <noun_abstr_smutty>
 	| in the <noun_throes> of <noun_abstr_s>
 	| the shape of <noun_abstr_s>
 	| beyond <noun_abstr_s>
@@ -73,18 +73,20 @@
 # Concrete singular noun
 <noun_conc_s> := <noun_strumpet>
 	| roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
-	| fire | Eden | weapon | orchid | beast | heart | flesh | silk | outlaw | killer
+	| fire | Eden | weapon | orchid | beast | heart | flesh | silk | killer
 	;;
 
 # Abstract singular noun
-<noun_abstr_s> := <noun_sexy> | <noun_desire>
+<noun_abstr_s> := <noun_abstr_smutty>
 	| heat | malice | malevolence | attraction | suspicion | chemistry | fear | touch
 	| knowledge | deception | vice | influence | behavior | love | beauty | jeopardy
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
 	| death | bond | risk | innocence | comfort | need | revenge | truth | instinct
-	| paradise | lie | crime | intrigue | betrayal | thrill
+	| paradise | lie | crime | intrigue | betrayal | thrill | proposal
 	;;
+
+<noun_abstr_smutty> := <noun_sexy> | <noun_desire> ;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
 
@@ -119,7 +121,7 @@
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
 	| physical | collateral | bitter | mortal | bodily | terminal | ultimate | primal | caged
-	| shapely | sheer | irresistible | killer | deviant | exploited
+	| shapely | sheer | irresistible | killer | deviant | exploited | heavenly
 	;;
 
 <adj_number> := double | triple;;
@@ -129,7 +131,7 @@
 # ###########################################################################
 <verb_inf> := <verb_inf_intransitive> | <verb_inf_transitive> ;;
 <verb_inf_intransitive> := die ;;
-<verb_inf_transitive> := kill | secude | murder | burn | conceal | strip | use | thrill ;;
+<verb_inf_transitive> := kill | seduce | murder | burn | conceal | strip | use | thrill ;;
 
 <verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed | stripped | dressed ;;
 
