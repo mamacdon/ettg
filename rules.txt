@@ -24,8 +24,8 @@
 	  the <noun_s> and the <noun_s> # The heart and the desire
 	| <verb_ppl> by <noun_pl>       # Violated by obsessions
 	| <verb_ppl> to <verb_inf>      # Stripped to kill
-	| return to <noun_pl>           # Return to confessions
-	| height of <noun_abstr_s>      # Height of aggression
+	| return to <noun_abstr_s>      # Return to malice
+	| height of <noun_desire>       # Height of desire
 	| point of <noun_abstr_s>       # Point of seduction
 	| <noun_desire> for <noun_sexy> # Urge for passion
 	| <noun_desire> to <verb_inf>   # Urge to murder
@@ -50,7 +50,6 @@
 
 # subtitles have a larger chance of being extended than regular title
 <subtitle> := <classic_title> | <classic_title> | <extended_title> ;;
-#z | the temptress | don't tell | point of seduction;;
 
 <num> := 2 | 2 | 2 | 3 | 3 | 4 | 5 | 6 | 7 | 8 | 9;;
 
@@ -58,11 +57,13 @@
 # NOUNS
 # ###########################################################################
 <noun> := <noun_s> | <noun_pl>;;
+
 <noun_s> := <noun_conc_s> | <noun_abstr_s> | <noun_abstr_s>;; # abstr longer so more likely
 
 # Concrete singular noun
-<noun_conc_s> := roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
-	| fire | Eden | weapon | orchid | temptress | beast | heart | dancer
+<noun_conc_s> := <noun_strumpet>
+	| roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
+	| fire | Eden | weapon | orchid | beast | heart
 	;;
 
 # Abstract singular noun
@@ -71,12 +72,13 @@
 	| knowledge | deception | vice | influence | behavior | love | beauty | jeopardy
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
-	| death | bond | risk | innocence | comfort
+	| death | bond | risk | innocence | comfort | need | revenge | truth | instinct
 	;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
 
-<noun_desire> := urge | passion | obsession | lust | desire | longing | yearning | appetite | taste ;;
+<noun_desire> := urge | passion | obsession | lust | desire | longing | yearning
+	| appetite | taste | bloodlust ;;
 
 <noun_pl> := illusions | requirements | instincts | desires | confessions | secrets
 	| liaisons | suspicions | perversions | affairs | encounters | emotions | inhibitions
@@ -86,6 +88,8 @@
 	;;
 
 <noun_symptom> := affliction | syndrome ;;
+
+<noun_strumpet> := dancer | seducer | temptress | succubus ;;
 
 # ###########################################################################
 # Adjectives
@@ -99,7 +103,7 @@
 	| dangerous | lethal | predatory | wicked | deep | indecent | midnight | private
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
-	| physical | collateral | bitter | mortal | bodily | terminal | ultimate
+	| physical | collateral | bitter | mortal | bodily | terminal | ultimate | primal
 	;;
 
 <adj_number> := double | triple;;
