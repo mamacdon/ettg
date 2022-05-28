@@ -44,7 +44,13 @@
 	| <noun_abstr_s> behind bars    # Vice Behind Bars
 	| the price of <noun_abstr_s>  
 	| the perfect <noun_sexy>
+	| in the <noun_throes> of <noun_abstr_s>
+	| the shape of <noun_abstr_s>
+	| beyond <noun_abstr_s>
+	| the <noun_abstr_s> <noun_interior>
 	;;
+
+# in the heat of
 
 # TODO restore this production when .com comes back into vogue
 # | <noun_s>.com                  # Sweat.com, Obsession.com
@@ -66,7 +72,7 @@
 # Concrete singular noun
 <noun_conc_s> := <noun_strumpet>
 	| roulette | kiss | fear | sweat | embrace | dance | agenda | hunter
-	| fire | Eden | weapon | orchid | beast | heart | flesh
+	| fire | Eden | weapon | orchid | beast | heart | flesh | silk | outlaw | killer
 	;;
 
 # Abstract singular noun
@@ -76,7 +82,7 @@
 	| response | justice | pursuit | discretion | bounty | fascination | hunger 
 	| heat | evidence | predator | embrace | night | witness | aggression | rage
 	| death | bond | risk | innocence | comfort | need | revenge | truth | instinct
-	| paradise
+	| paradise | lie | crime | intrigue | betrayal 
 	;;
 
 <noun_sexy> := passion | obsession | temptation | exposure | murder | seduction;;
@@ -95,6 +101,10 @@
 
 <noun_strumpet> := dancer | seducer | temptress | succubus ;;
 
+<noun_throes> := heat | throes | midst ;;
+
+<noun_interior> := inside | within ;;
+
 # ###########################################################################
 # Adjectives
 # ###########################################################################
@@ -108,6 +118,7 @@
 	| secret | tainted | final | the last | cold | illicit | fugitive | perfect | concealed
 	| full | unnatural | sultry | inhuman | heavy | murderous | lewd | licentious | lascivious
 	| physical | collateral | bitter | mortal | bodily | terminal | ultimate | primal | caged
+	| shapely | sheer | irresistible | killer | deviant
 	;;
 
 <adj_number> := double | triple;;
