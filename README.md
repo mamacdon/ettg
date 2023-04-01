@@ -24,6 +24,12 @@ Tainted Heat
 Sinister Suspicions
 ```
 
+## Troubleshooting
+To dump a representation of the grammar:
+```
+node bin/debug.js
+```
+
 ## References
 - https://diaboliquemagazine.com/sex-death-on-the-cheap-pt-1-the-lost-world-of-the-erotic-thriller/
 - https://en.wikipedia.org/wiki/Erotic_thriller
