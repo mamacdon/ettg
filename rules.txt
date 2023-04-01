@@ -32,10 +32,11 @@
 	| victim of <noun_pl>           #
 	| body of <noun_pl>             # Body of evidence
 	| the color of the <noun_s>     # The color of the embrace
+	| color of <noun_abstr_s>       # Color of night
 	| trial of <noun_abstr_s>       # Trial of passion
 	| the art of <noun_abstr_s>     # The art of malice
 	| <a_an> <noun_desire> for <noun_abstr_s>    # A taste for fear
-	| driven to <verb_inf>          # Driven to murder
+	| <verb_compelled> to <verb_inf>          # Driven to murder
 	| the virgin <noun_s>           # The virgin heart
 	| blood of <noun_pl>
 	| <noun_sexy> <noun_symptom>    # Murder syndrome
@@ -132,6 +133,7 @@
 <verb_inf> := <verb_inf_intransitive> | <verb_inf_transitive> ;;
 <verb_inf_intransitive> := die ;;
 <verb_inf_transitive> := kill | seduce | murder | burn | conceal | strip | use | thrill ;;
+<verb_compelled> := driven | urged | fated ;;
 
 <verb_ppl> := violated | seduced | possessed | murdered | tainted | concealed | stripped | dressed ;;
 
