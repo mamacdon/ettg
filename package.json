@@ -1,6 +1,6 @@
 {
   "name": "ettg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The erotic thriller title generator.",
   "main": "main.js",
   "module": "main.esm.js",
